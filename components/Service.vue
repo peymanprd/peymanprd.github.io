@@ -31,7 +31,7 @@ defineProps<Props>()
   >
     <template v-if="service.tag">
       <span
-        class="absolute -top-3 left-4 inline-flex justify-center items-center gap-1 py-1 px-2.5 rounded-full text-2xs font-bold capitalize text-neutral-800"
+        class="absolute -top-3 left-4 z-[1] inline-flex justify-center items-center gap-1 py-1 px-2.5 rounded-full text-2xs font-bold capitalize text-neutral-800"
         :class="[
           service.tag === TAG.POPULAR && 'bg-brand',
           service.tag === TAG.USED && 'bg-high',
