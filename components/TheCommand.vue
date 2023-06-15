@@ -17,7 +17,7 @@ const commandOptions = [
   },
   {
     name: 'Services',
-    link: '#p_services',
+    link: '/#p_services',
     iconName: 'solar:laptop-minimalistic-bold-duotone',
   },
   // {
