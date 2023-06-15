@@ -12,11 +12,7 @@ defineProps<Props>()
 </script>
 
 <template>
-  <SectionBox
-    id="p_projects"
-    caption="Some portfolio projects"
-    class="flex flex-col gap-8"
-  >
+  <SectionBox caption="Some of my projects" class="flex flex-col gap-8">
     <Project
       v-for="(project, projectKey) in projects"
       :key="projectKey"

@@ -26,6 +26,12 @@ defineProps<Props>()
         >
           Services
         </NuxtLink>
+        <NuxtLink
+          to="/#p_projects"
+          class="inline-flex items-center py-4 px-8 text-neutral-200"
+        >
+          Projects
+        </NuxtLink>
         <!-- <NuxtLink
           to="/blog"
           class="inline-flex items-center py-4 px-8 text-neutral-200"

@@ -37,6 +37,14 @@ const route = useRoute()
       </li>
       <li>
         <NuxtLink
+          to="/#p_projects"
+          class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+        >
+          Projects
+        </NuxtLink>
+      </li>
+      <li>
+        <NuxtLink
           to="/about"
           class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
         >

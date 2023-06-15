@@ -16,8 +16,8 @@
         Are you eager to work with me?
       </h4>
       <p class="text-sm leading-6 sm:text-2sm font-normal text-neutral-400">
-        There are no boundaries between me and you, feel free to get started and
-        email me your ideas
+        There are no barriers between us, so please feel free to begin and share
+        your ideas with me.
       </p>
       <div
         class="flex flex-col sm:flex-row items-center gap-8 mt-6 md:mt-auto mb-0"

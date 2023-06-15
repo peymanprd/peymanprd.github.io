@@ -19,8 +19,8 @@ defineProps<Props>()
 </script>
 
 <template>
-  <SectionBox id="p_services" caption="Services I can offer you">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
+  <SectionBox caption="Services I can offer you">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10 mb-8">
       <Service
         v-for="(service, serviceKey) in services"
         :key="serviceKey"

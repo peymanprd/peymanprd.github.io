@@ -14,7 +14,7 @@ defineProps<Props>()
 
 <template>
   <div
-    class="flex flex-col gap-8 md:flex-row md:justify-between md:items-center rounded-2xl py-6 px-8 border border-band"
+    class="flex flex-col gap-8 md:flex-row md:justify-between md:items-center rounded-2xl py-6 px-8 border border-band hover:backdrop-brightness-125 transition"
   >
     <div class="flex items-center gap-8">
       <NuxtImg :src="project.logo" />

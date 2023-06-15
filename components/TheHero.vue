@@ -36,7 +36,7 @@
       </NuxtLink>
       <NuxtLink
         to="/about"
-        class="inline-flex justify-center items-center w-full md:w-auto gap-2 py-3.5 px-5 border border-band hover:border-neutral-700 bg-transparent text-2sm font-medium text-white rounded-xl transition"
+        class="inline-flex justify-center items-center w-full md:w-auto gap-2 py-3.5 px-5 border border-band hover:backdrop-brightness-125 bg-transparent text-2sm font-medium text-white rounded-xl transition"
       >
         About Me
       </NuxtLink>

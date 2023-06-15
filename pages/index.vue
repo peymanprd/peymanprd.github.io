@@ -34,27 +34,27 @@ const services = [
 ]
 const projects = [
   {
-    logo: 'images/projects/pishop-logo.png',
-    name: 'Marketo',
-    summary: 'A market for online sales of khar and bar',
+    logo: 'images/x.png',
+    name: 'Coming',
+    summary: 'A project that may be discussed and observed',
     link: '/',
   },
   {
-    logo: 'images/projects/pishop-logo.png',
-    name: 'Marketo',
-    summary: 'A market for online sales of khar and bar',
+    logo: 'images/x.png',
+    name: 'Coming',
+    summary: 'A project that may be discussed and observed',
     link: '/',
   },
   {
-    logo: 'images/projects/pishop-logo.png',
-    name: 'Marketo',
-    summary: 'A market for online sales of khar and bar',
+    logo: 'images/x.png',
+    name: 'Coming',
+    summary: 'A project that may be discussed and observed',
     link: '/',
   },
   {
-    logo: 'images/projects/pishop-logo.png',
-    name: 'Marketo',
-    summary: 'A market for online sales of khar and bar',
+    logo: 'images/x.png',
+    name: 'Coming',
+    summary: 'A project that may be discussed and observed',
     link: '/',
   },
 ]
@@ -63,5 +63,5 @@ const projects = [
 <template>
   <TheHero />
   <Services :services="services" id="p_services" class="!mb-20 md:!mb-40" />
-  <!-- <Projects :projects="projects" id="p_projects" class="!mb-20 md:!mb-40" /> -->
+  <Projects :projects="projects" id="p_projects" class="!mb-20 md:!mb-40" />
 </template>
