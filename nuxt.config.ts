@@ -2,25 +2,25 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
-    "@nuxt/content",
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/color-mode",
-    "nuxt-icon",
-    "@nuxt/image-edge",
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    'nuxt-icon',
+    '@nuxt/image-edge',
   ],
   app: {
     head: {
       htmlAttrs: {
-        lang: "en",
+        lang: 'en',
       },
-      charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1",
-      title: "Peyman Pirzadeh - Frontend Developer",
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
+      title: 'Peyman Pirzadeh - Frontend Developer',
       link: [
-        { rel: "icon", type: "image/svg", href: "/favicon.svg" },
+        { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
         {
-          rel: "stylesheet",
-          href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap",
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap',
         },
       ],
     },
@@ -29,27 +29,27 @@ export default defineNuxtConfig({
     markdown: {
       remarkPlugins: {
         // Override remark-emoji options
-        "remark-emoji": {
+        'remark-emoji': {
           emoticon: true,
         },
       },
     },
     highlight: {
-      theme: { default: "github-dark" },
-      preload: ["vue"],
+      theme: { default: 'github-dark' },
+      preload: ['vue'],
     },
   },
   tailwindcss: {
-    cssPath: "~/assets/css/main.css",
+    cssPath: '~/assets/css/main.css',
     exposeConfig: false,
     injectPosition: 0,
     viewer: true,
   },
   colorMode: {
-    globalName: "__NUXT_COLOR_MODE__",
-    componentName: "ColorTheme",
-    classPrefix: "",
-    classSuffix: "",
-    storageKey: "theme-mode",
+    globalName: '__NUXT_COLOR_MODE__',
+    componentName: 'ColorTheme',
+    classPrefix: '',
+    classSuffix: '',
+    storageKey: 'theme-mode',
   },
-});
+})

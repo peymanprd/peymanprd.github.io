@@ -5,7 +5,7 @@
 <template>
   <footer class="flex flex-col gap-20 mb-4 md:mb-0 mt-auto py-4 relative">
     <div
-      class="absolute -top-60 left-0 md:-top-80 md:-left-60 bg-cyan-500/90 w-60 h-60 md:w-80 md:h-80 rounded-full blur-2max"
+      class="absolute -top-60 left-0 md:-top-80 md:-left-60 bg-high/90 w-60 h-60 md:w-80 md:h-80 rounded-full blur-2max"
     ></div>
     <Getintouch />
     <div

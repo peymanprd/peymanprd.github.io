@@ -5,7 +5,7 @@
 <template>
   <div class="flex flex-col gap-2 md:gap-3 py-16 md:h-[500px] relative">
     <div
-      class="absolute top-80 right-0 md:-right-60 bg-brand/80 w-60 h-60 md:w-80 md:h-80 rounded-full blur-2max"
+      class="absolute top-60 right-0 md:-right-60 bg-brand/80 w-60 h-60 md:w-80 md:h-80 rounded-full blur-2max"
     ></div>
     <h1 class="text-4xl md:text-title font-semibold text-white mt-6">
       Hello, I’m Peyman

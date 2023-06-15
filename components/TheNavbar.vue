@@ -18,7 +18,7 @@ const route = useRoute()
 </script>
 
 <template>
-  <nav class="flex items-center gap-8 py-8 font-medium text-2sm transition">
+  <nav class="flex items-center gap-8 py-8 font-normal text-2sm transition">
     <TheMobileMenu :visible="!!route.query.mobileMenu" />
     <NuxtLink
       to="/"
@@ -55,14 +55,10 @@ const route = useRoute()
 
     <div class="inline-flex items-center gap-4 mr-0 ml-auto">
       <NuxtLink
-        :to="`${route.path}?command=true`"
-        class="inline-flex justify-center items-center w-10 h-10 rounded-full"
+        :to="`${route.path}?commandsNavigate=true`"
+        class="inline-flex justify-center items-center w-10 h-10 rounded-full text-neutral-400 hover:text-neutral-100"
       >
-        <Icon
-          name="lucide:command"
-          size="18"
-          class="text-neutral-400 hover:text-neutral-100"
-        />
+        <Icon name="lucide:command" size="18" />
       </NuxtLink>
       <!-- <button
         id="theme_toggle"

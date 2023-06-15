@@ -1,52 +1,73 @@
 <script setup lang="ts">
+const CommandResults = resolveComponent('CommandResults')
+const CommandEmptyState = resolveComponent('CommandEmptyState')
 const route = useRoute()
 const commandTerm = ref('')
 const highlightIndex = ref(0)
-const options = [
+const commandOptions = [
   {
     name: 'Home',
     link: '/',
+    iconName: 'solar:home-smile-bold-duotone',
   },
   {
     name: 'About',
     link: '/about',
+    iconName: 'solar:user-hand-up-bold-duotone',
   },
-  {
-    name: 'Blog',
-    link: '/blog',
-  },
-  {
-    name: 'Stack',
-    link: '/',
-  },
+  // {
+  //   name: 'Blog',
+  //   link: '/blog',
+  //   iconName: 'solar:pen-new-square-bold-duotone',
+  // },
 ]
 
+const isVisibleCommand = computed(() => !!route.query.commandsNavigate)
+
 const results = computed(() => {
-  if (!commandTerm.value.length) return options
-  return options.filter((option) =>
+  if (!commandTerm.value.length) return commandOptions
+  return commandOptions.filter((option) =>
     option.name.includes(
       commandTerm.value.charAt(0).toUpperCase() + commandTerm.value.slice(1)
     )
   )
 })
 
-function onKeydown(e: Event) {
-  if (results.value && highlightIndex.value < results.value.length - 1) {
-    highlightIndex.value++
+function close() {
+  navigateTo(route.path)
+}
+
+function highlight(index: number) {
+  if (results.value.length) {
+    highlightIndex.value = index
+    if (highlightIndex.value > results.value.length - 1) {
+      highlightIndex.value = 0
+    }
+    if (highlightIndex.value < 0) {
+      highlightIndex.value = results.value.length - 1
+    }
   }
 }
-function onKeyup(e: Event) {
-  if (results.value && highlightIndex.value >= results.value.length - 1) {
-    highlightIndex.value--
-  }
+
+function highlightNext() {
+  highlight(highlightIndex.value + 1)
+}
+function highlightPrev() {
+  highlight(highlightIndex.value - 1)
+}
+
+function selectHighlight(index: number | null) {
+  if (index === null) navigateTo(results.value[highlightIndex.value].link)
+  else navigateTo(results.value[index].link)
+  highlightIndex.value = 0
 }
 </script>
 
 <template>
   <Teleport to="body">
     <div
-      v-if="route.query.command"
-      class="fixed inset-0 z-10 overflow-y-auto p-4"
+      v-if="isVisibleCommand"
+      class="fixed inset-0 z-10 overflow-y-auto px-4 py-28"
       role="dialog"
       aria-modal="true"
     >
@@ -62,8 +83,7 @@ function onKeyup(e: Event) {
     -->
 
       <div
-        v-if="route.query.command"
-        class="fixed inset-0 bg-neutral-950 bg-opacity-40 transition-opacity"
+        class="fixed inset-0 backdrop-blur-sm bg-neutral-950 bg-opacity-10 transition-opacity"
         aria-hidden="true"
       ></div>
 
@@ -79,23 +99,22 @@ function onKeyup(e: Event) {
     -->
 
       <div
-        v-if="route.query.command"
         class="mx-auto max-w-xl transform overflow-hidden rounded-xl bg-neutral/60 shadow-xl border border-band shadow-neutral-950 backdrop-blur-md transition-all"
       >
         <CommandInput
           v-model="commandTerm"
-          @keydown="onKeydown"
-          @keyup="onKeyup"
+          @keydown.esc="close"
+          @keydown.down="highlightNext"
+          @keydown.up="highlightPrev"
+          @keydown.enter.prevent="selectHighlight(null)"
+          @keydown.tab.prevent
         />
-        <template v-if="results.length">
-          <CommandResults
-            :results="results"
-            :highlight-index="highlightIndex"
-          />
-        </template>
-        <template v-else>
-          <CommandEmptyState />
-        </template>
+        <Component
+          :is="results.length ? CommandResults : CommandEmptyState"
+          @selectHighlight="selectHighlight"
+          :results="results"
+          :highlight-index="highlightIndex"
+        />
         <CommandHelper />
       </div>
     </div>

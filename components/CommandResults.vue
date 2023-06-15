@@ -5,11 +5,17 @@ interface Props {
 }
 
 defineProps<Props>()
+
+interface Emits {
+  (e: 'selectHighlight', index: number): void
+}
+
+const emit = defineEmits<Emits>()
 </script>
 
 <template>
   <ul
-    class="max-h-80 scroll-pt-11 scroll-pb-2 space-y-2 overflow-y-auto pb-2"
+    class="max-h-80 scroll-pt-11 scroll-pb-2 space-y-2 overflow-y-auto"
     id="options"
     role="listbox"
   >
@@ -21,15 +27,18 @@ defineProps<Props>()
         <li
           v-for="(result, resultKey) in results"
           :key="resultKey"
-          class="flex items-center gap-2.5 cursor-pointer hover:bg-neutral-900/40 hover:text-neutral-100 select-none px-4 py-2"
-          :class="highlightIndex === resultKey && 'bg-neutral-900/40'"
+          class="flex items-center gap-2.5 cursor-pointer hover:bg-neutral-900/40 hover:text-neutral-100 px-4 py-2"
+          :class="
+            highlightIndex === resultKey && 'bg-neutral-900/40 text-neutral-100'
+          "
           id="option-1"
           role="option"
-          tabindex="-1"
-          @click="navigateTo(result.link)"
-          @keydown.enter="navigateTo(result.link)"
+          tabindex="0"
+          @click="emit('selectHighlight', resultKey)"
         >
-          <Icon name="solar:link-square-line-duotone" size="16" />
+          <ClientOnly>
+            <Icon :name="result.iconName" size="16" />
+          </ClientOnly>
           {{ result.name }}
         </li>
       </ul>

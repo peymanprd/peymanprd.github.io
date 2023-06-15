@@ -12,7 +12,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand: '#0AE361',
+        brand: '#0AE395',
+        high: '#0AE3E3',
         neutral: {
           850: '#1C1C1C',
         },
@@ -28,7 +29,7 @@ module.exports = {
       },
       blur: {
         max: '282px',
-        '2max': '404px',
+        '2max': '380px',
       },
     },
   },

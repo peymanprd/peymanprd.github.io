@@ -95,19 +95,17 @@ const tools = [
 <template>
   <section class="mt-6 md:mt-12">
     <div class="py-10">
-      <h2
-        class="text-2xl md:text-subtitle font-medium text-neutral-300 md:mt-4"
-      >
+      <h2 class="text-2xl md:text-title font-medium text-neutral-300 md:mt-4">
         About Me
       </h2>
-      <div class="space-x-1.5 mt-6 text-neutral-800 dark:text-neutral-200">
-        <span class="font-medium">
-          I'm Peyman. A
-          <strong>Self-Taught Frontend Developer</strong>.
-        </span>
+      <div
+        class="text-2xl md:text-xl font-normal mt-6 text-neutral-800 dark:text-neutral-200 mt-16"
+      >
+        I'm Peyman Pirzadeh, A
+        <strong class="font-medium">Self-Taught Frontend Developer</strong>.
       </div>
-      <p class="mt-6 text-neutral-700 dark:text-neutral-300 leading-7">
-        I'm currently just learn & experience. i really
+      <p class="text-neutral-700 dark:text-neutral-300 leading-7 mt-4">
+        I currently just learn and experience. i really
         <strong>passionate</strong> about aesthetics and UI design. All stages
         from planning to creating my ideas to code are enjoyable for me, so the
         whole path to reaching the destination belongs to me.

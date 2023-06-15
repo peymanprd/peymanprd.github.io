@@ -17,6 +17,7 @@ useHead({
   >
     <TheNavbar />
     <main>
+      <TheCommand />
       <slot />
     </main>
     <TheFooter />
