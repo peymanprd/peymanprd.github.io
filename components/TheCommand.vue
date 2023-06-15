@@ -15,6 +15,11 @@ const commandOptions = [
     link: '/about',
     iconName: 'solar:user-hand-up-bold-duotone',
   },
+  {
+    name: 'Services',
+    link: '#p_services',
+    iconName: 'solar:laptop-minimalistic-bold-duotone',
+  },
   // {
   //   name: 'Blog',
   //   link: '/blog',
