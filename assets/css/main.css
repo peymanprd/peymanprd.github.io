@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  font-family: 'Inter', sans-serif !important;
+}
+
+.dark-mode {
+  .card {
+    @apply bg-zinc-900 text-zinc-200 border border-zinc-800;
+  }
+}
+.freak-mode {
+  .card {
+    @apply bg-emerald-800 text-emerald-100 border border-emerald-800;
+  }
+}
