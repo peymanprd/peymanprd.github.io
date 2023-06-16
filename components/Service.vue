@@ -26,7 +26,7 @@ defineProps<Props>()
     :class="[
       !service.tag && 'border-band',
       service.tag === TAG.POPULAR && 'border-brand',
-      service.tag === TAG.USED && 'border-cyan-500',
+      service.tag === TAG.USED && 'border-high',
     ]"
   >
     <template v-if="service.tag">

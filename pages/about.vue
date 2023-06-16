@@ -94,33 +94,57 @@ const tools = [
 
 <template>
   <section class="mt-6 md:mt-12">
-    <div class="py-10">
-      <h2 class="text-2xl md:text-title font-medium text-neutral-300 md:mt-4">
-        About Me
-      </h2>
-      <div
-        class="text-2xl md:text-xl font-normal mt-6 text-neutral-800 dark:text-neutral-200 mt-16"
-      >
-        I'm Peyman Pirzadeh, A
-        <strong class="font-medium">Self-Taught Frontend Developer</strong>.
+    <div class="flex flex-col md:flex-row md:items-start gap-8 py-10">
+      <div class="flex flex-col pr-8">
+        <h2
+          v-motion-slide-left
+          class="text-4xl md:text-5xl font-medium text-neutral-100 md:mt-4"
+        >
+          About Peyman
+        </h2>
+        <div
+          v-motion-slide-right
+          class="text-sm md:text-base font-normal text-neutral-800 dark:text-neutral-100 mt-3"
+        >
+          In search of madness and logic between pixels
+        </div>
+        <p class="text-neutral-300 font-light leading-7 mt-6">
+          I'm a
+          <strong class="font-medium text-neutral-200">
+            Frontend Developer / UI Designer
+          </strong>
+          from Iran. Ever since I can remember, I've always been fascinated by
+          <strong class="font-medium text-neutral-200">building</strong> and
+          <strong class="font-medium text-neutral-200">creating</strong> things.
+          It is the one thing that makes me feel alive. <br />
+          So, up until this point, I tried a variety of approaches. I am
+          <strong class="font-medium text-neutral-200">obsessed</strong> with
+          <strong class="font-medium text-neutral-200">designing</strong>
+          fantastic
+          <strong class="font-medium">user interfaces</strong>
+          and <strong class="font-medium">experiences</strong>. So I'm
+          continuously investigating and thinking about how to
+          <strong class="font-medium">develop</strong>,
+          <strong class="font-medium">improve</strong>, and
+          <strong class="font-medium">optimize</strong> them, and I'm always
+          ready to <strong class="font-medium">collaborate</strong> with smart
+          and <strong class="font-medium">creative</strong> people.
+        </p>
       </div>
-      <p class="text-neutral-700 dark:text-neutral-300 leading-7 mt-4">
-        I currently just learn and experience. i really
-        <strong>passionate</strong> about aesthetics and UI design. All stages
-        from planning to creating my ideas to code are enjoyable for me, so the
-        whole path to reaching the destination belongs to me.
-      </p>
-      <div class="border-t dark:border-t-neutral-800 my-10"></div>
-      <p class="text-neutral-700 dark:text-neutral-300 leading-7 my-4">
-        I'm passionate about many creative pursuits, including music,
-        photography, videography, and of course, <strong>coding</strong>. I love
-        building for the <strong>web</strong>. The web is incredible. Anyone can
-        become a <strong>developer</strong>, writer, or creator – and no one has
-        to ask for permission. You can just build.
-      </p>
-
-      <div class="mt-10 flex flex-col md:flex-row md:items-center gap-4">
-        <!-- <a
+      <div class="flex flex-col min-w-[414px] h-full">
+        <div
+          class="h-[484px] bg-neutral-900 border border-band rounded-xl flex justify-center items-center"
+        >
+          <Icon
+            name="solar:user-hands-bold-duotone"
+            size="202"
+            class="text-neutral-800"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="mt-10 flex flex-col md:flex-row md:items-center gap-4">
+      <!-- <a
             href="https://twitter.com/peyman_pirzadeh"
             target="_blank"
             class="flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 dark:border dark:border-neutral-800 rounded-md text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-200 hover:bg-white hover:ring-1 hover:ring-neutral-100 dark:ring-0 dark:hover:bg-neutral-800 transition"
@@ -129,25 +153,32 @@ const tools = [
             Twitter
             <Icon name="lucide:arrow-up-right" size="18" class="ml-auto mr-0" />
           </a> -->
-        <a
-          href="https://github.com/peymanprd"
-          target="_blank"
-          class="flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 dark:border dark:border-neutral-800 rounded-md text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-200 hover:bg-white hover:ring-1 hover:ring-neutral-100 dark:ring-0 dark:hover:bg-neutral-800 transition"
-        >
-          <Icon name="uim:github-alt" size="20" class="ml-1" />
-          Github
-          <Icon name="lucide:arrow-up-right" size="18" class="ml-auto mr-0" />
-        </a>
-        <a
-          href="/file/peymanpirzadeh-resume-v1.6.pdf"
-          class="flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 dark:border dark:border-neutral-800 rounded-md text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-200 hover:bg-white hover:ring-1 hover:ring-neutral-100 dark:ring-0 dark:hover:bg-neutral-800 transition"
-        >
-          <Icon name="heroicons:briefcase-20-solid" size="20" class="ml-1" />
-          Resume
-          <Icon name="lucide:arrow-up-right" size="18" class="ml-auto mr-0" />
-        </a>
-      </div>
-      <Tools :tools="tools" />
+      <NuxtLink
+        to="https://github.com/peymanprd"
+        target="_blank"
+        class="group/item flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 border border-band rounded-lg text-sm text-neutral-100 font-semibold bg-neutral-900 hover:bg-neutral-800 transition"
+      >
+        <Icon name="uim:github-alt" size="20" class="ml-1" />
+        Github
+        <Icon
+          name="lucide:arrow-up-right"
+          size="18"
+          class="ml-auto mr-0 invisible group-hover/item:visible transition"
+        />
+      </NuxtLink>
+      <NuxtLink
+        to="file/peymanpirzadeh-resume-v1.6.pdf"
+        class="group/item flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 border border-band rounded-lg text-sm text-neutral-100 font-semibold bg-neutral-900 hover:bg-neutral-800 transition"
+      >
+        <Icon name="heroicons:briefcase-20-solid" size="20" class="ml-1" />
+        Resume
+        <Icon
+          name="lucide:arrow-up-right"
+          size="18"
+          class="ml-auto mr-0 invisible group-hover/item:visible transition"
+        />
+      </NuxtLink>
     </div>
+    <Tools :tools="tools" />
   </section>
 </template>

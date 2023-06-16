@@ -46,7 +46,6 @@ const results = computed(() => {
 function close() {
   navigateTo(route.path)
 }
-
 function highlight(index: number) {
   if (results.value.length) {
     highlightIndex.value = index
@@ -58,14 +57,12 @@ function highlight(index: number) {
     }
   }
 }
-
 function highlightNext() {
   highlight(highlightIndex.value + 1)
 }
 function highlightPrev() {
   highlight(highlightIndex.value - 1)
 }
-
 function selectHighlight(index: number | null) {
   if (index === null) navigateTo(results.value[highlightIndex.value].link)
   else navigateTo(results.value[index].link)
@@ -77,6 +74,11 @@ function selectHighlight(index: number | null) {
   <Teleport to="body">
     <div
       v-if="isVisibleCommand"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0 }"
+      :leave="{ opacity: 0, y: 100 }"
+      :delay="100"
       class="fixed inset-0 z-10 overflow-y-auto px-4 py-28"
       role="dialog"
       aria-modal="true"
@@ -93,7 +95,7 @@ function selectHighlight(index: number | null) {
     -->
 
       <div
-        class="fixed inset-0 backdrop-blur-sm bg-neutral-950 bg-opacity-10 transition-opacity"
+        class="fixed inset-0 bg-neutral-950 bg-opacity-10 transition-opacity"
         aria-hidden="true"
       ></div>
 

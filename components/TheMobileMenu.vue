@@ -38,12 +38,6 @@ defineProps<Props>()
         >
           Blog
         </NuxtLink> -->
-        <NuxtLink
-          to="/"
-          class="inline-flex items-center py-4 px-8 text-neutral-200"
-        >
-          Stack
-        </NuxtLink>
       </div>
     </div>
   </Teleport>
