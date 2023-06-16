@@ -167,7 +167,7 @@ const tools = [
         />
       </NuxtLink>
       <NuxtLink
-        to="file/peymanpirzadeh-resume-v1.6.pdf"
+        to="/file/peymanpirzadeh-resume-v1.6.pdf"
         class="group/item flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 border border-band rounded-lg text-sm text-neutral-100 font-semibold bg-neutral-900 hover:bg-neutral-800 transition"
       >
         <Icon name="heroicons:briefcase-20-solid" size="20" class="ml-1" />
