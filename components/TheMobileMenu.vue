@@ -9,6 +9,11 @@ defineProps<Props>()
   <Teleport to="body">
     <div
       v-if="visible"
+      v-motion
+      :initial="{ opacity: 0, y: 100 }"
+      :enter="{ opacity: 1, y: 0 }"
+      :leave="{ opacity: 0, y: 100 }"
+      :delay="50"
       class="md:hidden mx-auto w-full p-4 absolute top-0 left-0 z-10 transition-all"
     >
       <div

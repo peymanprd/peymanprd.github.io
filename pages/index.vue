@@ -8,7 +8,7 @@ const services = [
   {
     name: 'VueJS / Nuxt Development',
     summary:
-      'VueJS is one of the best JavaScript frameworks, and I will use it to create wonderful web browser and mobile phone applications for your organization.',
+      'VueJS is a fantastic JavaScript framework that I will use to create excellent web and mobile applications for your company.',
     tag: 'popular',
     iconName: 'solar:medal-ribbons-star-bold-duotone',
   },
