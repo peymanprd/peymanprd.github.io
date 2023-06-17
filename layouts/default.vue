@@ -11,11 +11,14 @@ useHead({
 </script>
 
 <template>
-  <div id="__default_layout__" class="min-h-screen flex flex-col">
+  <div
+    id="__default_layout__"
+    class="max-w-4xl mx-auto px-6 min-h-screen flex flex-col"
+  >
     <!-- <div class="sticky top-0 z-[5] bg-neutral-900/10"> -->
     <TheNavbar />
     <!-- </div> -->
-    <main class="max-w-4xl mx-auto px-6 min-h-screen flex flex-col">
+    <main>
       <TheCommand />
       <slot />
     </main>

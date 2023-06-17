@@ -19,7 +19,7 @@ const route = useRoute()
 
 <template>
   <nav
-    class="max-w-4xl mx-auto px-6 flex items-center w-full gap-8 py-8 font-medium text-2sm transition"
+    class="flex items-center w-full gap-8 py-8 font-medium text-2sm transition"
   >
     <TheMobileMenu :visible="!!route.query.mobileMenu" />
     <NuxtLink to="/" class="text-neutral-500 hover:text-neutral-900 mr-10">
