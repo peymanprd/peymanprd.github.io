@@ -24,7 +24,7 @@ const titleText = shallowRef<MaybeElement>()
     <AvailabilityStatus class="md:hidden" />
     <h1
       v-motion-slide-left
-      class="text-3xl md:text-title font-semibold text-white mt-2 md:mt-8"
+      class="text-3xl md:text-title font-semibold text-white mt-1 md:mt-8"
     >
       Hello, I’m Peyman
     </h1>

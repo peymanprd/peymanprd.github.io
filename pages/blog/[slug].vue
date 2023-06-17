@@ -11,10 +11,16 @@ const { data: post }: null | any = await useAsyncData(
   <article class="py-10">
     <NuxtLink
       to="/blog"
-      class="inline-flex items-center gap-1 p-2 pr-4 rounded-md border border-band bg-neutral-900 hover:bg-neutral-800 text-neutral-200 text-sm font-medium"
+      class="inline-flex items-center gap-1 rounded-md border border-band bg-neutral-900 hover:bg-neutral-800 text-neutral-200 text-sm font-medium"
     >
-      <Icon name="lucide:chevron-left" size="16" />
-      Back
+      <span class="inline-flex justify-center items-center py-2 px-3">
+        Back
+      </span>
+      <span
+        class="inline-flex justify-center items-center p-2 border-l border-l-band"
+      >
+        <Icon name="solar:undo-left-bold" size="16" />
+      </span>
     </NuxtLink>
     <ContentRenderer :value="post" class="mt-6" />
   </article>
@@ -33,7 +39,7 @@ article :deep(p) {
 }
 
 article :deep(pre) {
-  @apply w-full overflow-x-auto border border-band bg-neutral-900 py-5 px-6 rounded-xl my-12;
+  @apply w-full overflow-x-auto border border-band bg-neutral-900 py-3 px-5 rounded-xl my-12;
 }
 article :deep(code) {
   @apply font-['JetBrains_Mono'] text-[.84rem] font-light leading-6;

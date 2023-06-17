@@ -21,8 +21,10 @@ export default defineNuxtConfig({
       link: [
         { rel: 'icon', type: 'image/svg', href: '/favicon.svg' },
         {
-          rel: 'stylesheet',
+          rel: 'preload',
+          as: 'font',
           href: 'https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap',
+          crossorigin: 'anonymous',
         },
       ],
     },
