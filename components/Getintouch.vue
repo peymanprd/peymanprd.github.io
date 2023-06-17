@@ -10,9 +10,9 @@
       <NuxtImg src="/images/icons/email.png" class="w-20" />
     </div>
     <div
-      class="flex flex-col gap-3 py-6 px-12 md:px-8 bg-neutral-900 rounded-2xl h-auto md:h-56"
+      class="flex flex-col gap-3 py-6 px-8 bg-neutral-900 rounded-2xl w-full h-auto md:h-56"
     >
-      <h4 class="text-lg sm:text-2xl font-medium capitalize text-white">
+      <h4 class="text-md sm:text-2xl font-medium capitalize text-white">
         Are you eager to work with me?
       </h4>
       <p class="text-sm leading-6 sm:text-2sm font-normal text-neutral-400">

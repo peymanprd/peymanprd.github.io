@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="flex items-center gap-14 sm:gap-4">
+  <div class="flex items-center gap-8 sm:gap-4">
     <!-- <NuxtLink
       to="https://instagram.com/pirzadeh_peyman"
       target="_blank"

@@ -69,7 +69,7 @@ const route = useRoute()
     </ul>
 
     <div class="inline-flex items-center gap-4 mr-0 ml-auto">
-      <AvailabilityStatus />
+      <AvailabilityStatus class="hidden md:flex" />
       <NuxtLink
         :to="`${route.path}?commandsNavigate=true`"
         class="inline-flex justify-center items-center w-10 h-10 rounded-full text-neutral-400 hover:text-neutral-100"

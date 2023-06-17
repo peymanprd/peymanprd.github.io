@@ -79,7 +79,7 @@ function selectHighlight(index: number | null) {
       :enter="{ opacity: 1, y: 0 }"
       :leave="{ opacity: 0, y: 100 }"
       :delay="50"
-      class="fixed inset-0 z-10 overflow-y-auto px-4 py-28"
+      class="fixed inset-0 z-10 overflow-y-auto px-4 py-24"
       role="dialog"
       aria-modal="true"
     >

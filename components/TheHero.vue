@@ -21,21 +21,22 @@ const titleText = shallowRef<MaybeElement>()
     <div
       class="absolute top-60 right-0 md:-right-60 bg-brand/80 w-60 h-60 md:w-80 md:h-80 rounded-full blur-2max"
     ></div>
+    <AvailabilityStatus class="md:hidden" />
     <h1
       v-motion-slide-left
-      class="text-4xl md:text-title font-semibold text-white mt-6"
+      class="text-3xl md:text-title font-semibold text-white mt-2 md:mt-6"
     >
       Hello, I’m Peyman
     </h1>
     <h2
       v-motion-slide-right
-      class="text-xl md:text-subtitle font-normal text-neutral-300 md:mt-4"
+      class="text-md md:text-subtitle font-normal text-neutral-300 md:mt-4"
     >
       A Self-Taught
       <strong ref="titleText" class="font-medium">Frontend Developer</strong>
     </h2>
     <p
-      class="my-6 md:mt-10 md:max-w-3xl text-base md:text-body font-normal md:leading-8 text-neutral-300 md:text-neutral-400"
+      class="my-6 md:mt-10 md:max-w-3xl text-sm md:text-body font-normal leading-6 md:leading-8 text-neutral-300 md:text-neutral-400"
     >
       proficient in HTML, CSS, and JavaScript framework Vue.js. details-oriented
       and experienced in building multi-platform websites using responsive web
