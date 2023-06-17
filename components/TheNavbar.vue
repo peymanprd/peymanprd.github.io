@@ -18,19 +18,18 @@ const route = useRoute()
 </script>
 
 <template>
-  <nav class="flex items-center gap-8 py-8 font-normal text-2sm transition">
+  <nav
+    class="max-w-4xl mx-auto px-6 flex items-center w-full gap-8 py-8 font-medium text-2sm transition"
+  >
     <TheMobileMenu :visible="!!route.query.mobileMenu" />
-    <NuxtLink
-      to="/"
-      class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100 mr-10"
-    >
+    <NuxtLink to="/" class="text-neutral-500 hover:text-neutral-900 mr-10">
       <TheLogo />
     </NuxtLink>
     <ul class="hidden md:flex md:items-center md:gap-12">
       <li>
         <NuxtLink
           to="/#p_services"
-          class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          class="text-neutral-500 hover:text-neutral-100"
         >
           Services
         </NuxtLink>
@@ -38,23 +37,20 @@ const route = useRoute()
       <li>
         <NuxtLink
           to="/#p_projects"
-          class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          class="text-neutral-500 hover:text-neutral-100"
         >
           Projects
         </NuxtLink>
       </li>
       <li>
-        <NuxtLink
-          to="/about"
-          class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
-        >
+        <NuxtLink to="/about" class="text-neutral-500 hover:text-neutral-100">
           About
         </NuxtLink>
       </li>
       <!-- <li>
         <NuxtLink
           to="/blog"
-          class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          class="text-neutral-500 hover:text-neutral-900"
         >
           Blog
         </NuxtLink>
@@ -62,7 +58,7 @@ const route = useRoute()
       <li>
         <NuxtLink
           to="mailto:dev.pirzadeh@gmail.com"
-          class="text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"
+          class="text-neutral-500 hover:text-neutral-100"
         >
           Contact
         </NuxtLink>
@@ -70,12 +66,14 @@ const route = useRoute()
     </ul>
 
     <div class="inline-flex items-center gap-4 mr-0 ml-auto">
+      <AvailabilityStatus />
       <NuxtLink
         :to="`${route.path}?commandsNavigate=true`"
         class="inline-flex justify-center items-center w-10 h-10 rounded-full text-neutral-400 hover:text-neutral-100"
       >
         <Icon name="lucide:command" size="18" />
       </NuxtLink>
+
       <!-- <button
         id="theme_toggle"
         aria-label="theme_toggle"
