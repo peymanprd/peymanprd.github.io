@@ -34,29 +34,29 @@ const services = [
 ]
 const projects = [
   {
-    logo: 'images/x.png',
-    name: 'Coming',
-    summary: 'A project that may be discussed and observed',
-    link: '/',
+    logo: 'images/projects/ilm.png',
+    name: 'ilm',
+    summary: 'A Weather web application',
+    link: 'https://ilm-black.vercel.app',
   },
   {
-    logo: 'images/x.png',
-    name: 'Coming',
-    summary: 'A project that may be discussed and observed',
-    link: '/',
+    logo: 'images/projects/drawer.png',
+    name: 'Drawer',
+    summary: 'A tool for drawing and painting',
+    link: 'https://drawer-eta.vercel.app',
   },
-  {
-    logo: 'images/x.png',
-    name: 'Coming',
-    summary: 'A project that may be discussed and observed',
-    link: '/',
-  },
-  {
-    logo: 'images/x.png',
-    name: 'Coming',
-    summary: 'A project that may be discussed and observed',
-    link: '/',
-  },
+  // {
+  //   logo: 'images/x.png',
+  //   name: 'Coming',
+  //   summary: 'A project that may be discussed and observed',
+  //   link: '/',
+  // },
+  // {
+  //   logo: 'images/x.png',
+  //   name: 'Coming',
+  //   summary: 'A project that may be discussed and observed',
+  //   link: '/',
+  // },
 ]
 </script>
 

@@ -26,11 +26,13 @@
           to="mailto:dev.pirzadeh@gmail.com"
           class="group/item inline-flex justify-center items-center w-full md:w-auto gap-2 py-3.5 px-9 bg-white hover:bg-neutral-200 text-2sm font-bold text-neutral-900 rounded-xl transition"
         >
-          Get in touch
+          <span class="translate-x-3 group-hover/item:translate-x-0 transition">
+            Get in touch
+          </span>
           <Icon
             name="iconamoon:arrow-top-right-1-bold"
             size="18"
-            class="group-hover/item:translate-x-1 transition"
+            class="opacity-0 group-hover/item:opacity-100 group-hover/item:translate-x-1 transition"
           />
         </NuxtLink>
         <Socials />

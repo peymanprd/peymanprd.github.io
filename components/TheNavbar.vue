@@ -25,7 +25,7 @@ const route = useRoute()
     <NuxtLink to="/" class="text-neutral-500 hover:text-neutral-900 mr-8">
       <TheLogo />
     </NuxtLink>
-    <ul class="hidden md:flex md:items-center md:gap-12">
+    <ul class="hidden md:flex md:items-center md:gap-10">
       <li>
         <NuxtLink
           to="/#p_services"
