@@ -6,7 +6,7 @@
 
 <template>
   <div
-    class="inline-flex items-center gap-2 px-4 py-2 w-max rounded-full bg-neutral-950/20"
+    class="inline-flex items-center gap-2 px-3 py-1.5 w-max rounded-full bg-neutral-950/20 border border-band/40"
   >
     <span class="relative flex justify-center items-center h-2.5 w-2.5">
       <span
