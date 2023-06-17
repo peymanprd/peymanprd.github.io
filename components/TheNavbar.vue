@@ -24,7 +24,7 @@ const route = useRoute()
     <TheMobileMenu :visible="!!route.query.mobileMenu" />
     <NuxtLink
       to="/"
-      class="text-neutral-500 hover:text-neutral-900 mr-4 md:mr-8"
+      class="text-neutral-500 hover:text-neutral-900 mr-2 md:mr-8"
     >
       <TheLogo />
     </NuxtLink>

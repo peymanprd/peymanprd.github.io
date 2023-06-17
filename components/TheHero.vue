@@ -35,7 +35,7 @@ const titleText = shallowRef<MaybeElement>()
       <strong ref="titleText" class="font-medium">Frontend Developer</strong>
     </h2>
     <p
-      class="my-6 md:mt-10 md:max-w-3xl text-base md:text-body font-normal md:leading-8 text-neutral-400"
+      class="my-6 md:mt-10 md:max-w-3xl text-base md:text-body font-normal md:leading-8 text-neutral-300 md:text-neutral-400"
     >
       proficient in HTML, CSS, and JavaScript framework Vue.js. details-oriented
       and experienced in building multi-platform websites using responsive web
