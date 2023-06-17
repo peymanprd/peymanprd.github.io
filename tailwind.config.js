@@ -24,6 +24,7 @@ module.exports = {
         subtitle: '36px',
         body: '18px',
         '2sm': '15px',
+        '2.5sm': '14px',
         '3sm': '13px',
         '2xs': '10px',
       },
