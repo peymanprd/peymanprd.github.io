@@ -104,7 +104,7 @@ const tools = [
         </h2>
         <div
           v-motion-slide-right
-          class="text-sm md:text-base font-normal text-neutral-800 dark:text-neutral-100 mt-3"
+          class="text-sm md:text-base font-normal text-neutral-100 mt-3"
         >
           In search of madness and logic between pixels
         </div>
@@ -131,7 +131,7 @@ const tools = [
           and <strong class="font-medium">creative</strong> people.
         </p>
       </div>
-      <div class="flex flex-col min-w-[414px] h-full">
+      <div class="flex flex-col w-full md:min-w-[414px] h-full">
         <div
           class="h-[484px] bg-neutral-900 border border-band rounded-xl flex justify-center items-center"
         >

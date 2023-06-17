@@ -22,7 +22,10 @@ const route = useRoute()
     class="flex items-center w-full gap-8 py-8 font-medium text-2.5sm transition"
   >
     <TheMobileMenu :visible="!!route.query.mobileMenu" />
-    <NuxtLink to="/" class="text-neutral-500 hover:text-neutral-900 mr-8">
+    <NuxtLink
+      to="/"
+      class="text-neutral-500 hover:text-neutral-900 mr-4 md:mr-8"
+    >
       <TheLogo />
     </NuxtLink>
     <ul class="hidden md:flex md:items-center md:gap-10">

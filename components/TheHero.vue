@@ -29,13 +29,13 @@ const titleText = shallowRef<MaybeElement>()
     </h1>
     <h2
       v-motion-slide-right
-      class="text-2xl md:text-subtitle font-normal text-neutral-300 md:mt-4"
+      class="text-xl md:text-subtitle font-normal text-neutral-300 md:mt-4"
     >
       A Self-Taught
       <strong ref="titleText" class="font-medium">Frontend Developer</strong>
     </h2>
     <p
-      class="my-6 md:mt-10 md:max-w-3xl text-base md:text-body font-normal md:leading-8 text-neutral-600 dark:text-neutral-400"
+      class="my-6 md:mt-10 md:max-w-3xl text-base md:text-body font-normal md:leading-8 text-neutral-400"
     >
       proficient in HTML, CSS, and JavaScript framework Vue.js. details-oriented
       and experienced in building multi-platform websites using responsive web
