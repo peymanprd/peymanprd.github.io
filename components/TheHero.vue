@@ -38,7 +38,7 @@ const titleText = shallowRef<MaybeElement>()
     <p
       class="my-6 md:mt-10 md:max-w-3xl text-sm md:text-body font-normal leading-6 md:leading-8 text-neutral-300 md:text-neutral-400"
     >
-      proficient in HTML, CSS, and JavaScript framework Vue.js. details-oriented
+      Proficient in HTML, CSS, and JavaScript framework Vue.js. details-oriented
       and experienced in building multi-platform websites using responsive web
       design (RWD). extremely passionate about creating UI and optimizing UX.
     </p>
