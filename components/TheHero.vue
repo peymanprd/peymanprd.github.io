@@ -40,7 +40,7 @@ const titleText = shallowRef<MaybeElement>()
     >
       Proficient in HTML, CSS, and JavaScript framework Vue.js. details-oriented
       and experienced in building multi-platform websites using responsive web
-      design (RWD). extremely passionate about creating UI and optimizing UX.
+      design (RWD). extremely enthusiastic about creating UI and optimizing UX.
     </p>
     <div
       class="flex flex-col sm:flex-row items-center gap-6 md:mt-12 md:mt-auto mb-0"
