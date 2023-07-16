@@ -144,15 +144,6 @@ const tools = [
       </div>
     </div>
     <div class="mt-10 flex flex-col md:flex-row md:items-center gap-4">
-      <!-- <a
-            href="https://twitter.com/peyman_pirzadeh"
-            target="_blank"
-            class="flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 dark:border dark:border-neutral-800 rounded-md text-sm font-semibold bg-neutral-100 dark:bg-neutral-900 text-neutral-700 dark:text-neutral-200 hover:bg-white hover:ring-1 hover:ring-neutral-100 dark:ring-0 dark:hover:bg-neutral-800 transition"
-          >
-            <Icon name="uim:twitter-alt" size="20" class="ml-1" />
-            Twitter
-            <Icon name="lucide:arrow-up-right" size="18" class="ml-auto mr-0" />
-          </a> -->
       <NuxtLink
         to="https://github.com/peymanprd"
         target="_blank"
