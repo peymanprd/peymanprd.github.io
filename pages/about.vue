@@ -157,7 +157,7 @@ const tools = [
           class="ml-auto mr-0 invisible group-hover/item:visible transition"
         />
       </NuxtLink>
-      <NuxtLink
+      <!-- <NuxtLink
         to="/file/peymanpirzadeh-resume-v1.6.pdf"
         class="group/item flex-1 inline-flex justify-center items-center gap-3 px-4 py-3.5 border border-band rounded-lg text-sm text-neutral-100 font-semibold bg-neutral-900 hover:bg-neutral-800 transition"
       >
@@ -168,7 +168,7 @@ const tools = [
           size="18"
           class="ml-auto mr-0 invisible group-hover/item:visible transition"
         />
-      </NuxtLink>
+      </NuxtLink> -->
     </div>
     <Tools :tools="tools" />
   </section>
